@@ -2457,6 +2457,9 @@ button.small,
 	top: 0;
 	width: 100%;
 	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #header h1 {
@@ -2470,7 +2473,6 @@ button.small,
 
 #header nav {
 	letter-spacing: 0.075em;
-	position: absolute;
 	right: 1.5em;
 	text-transform: uppercase;
 	top: 0;
@@ -2479,6 +2481,7 @@ button.small,
 #header nav ul {
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 #header nav ul li {
@@ -2498,6 +2501,8 @@ button.small,
 	line-height: 1em;
 	padding: 0.6em 0.75em;
 	text-decoration: none;
+	font-weight: 900;
+	font-size: 20px;
 }
 
 #header nav ul li input[type="button"],
@@ -2542,8 +2547,9 @@ button.small,
 }
 
 #header nav ul li.current>a {
-	font-weight: 900;
+	font-weight: 200;
 	font-size: 20px;
+	
 }
 
 .layouts{
@@ -2566,7 +2572,7 @@ button.small,
 	background: transparent;
 	box-shadow: none;
 	color: #fff;
-	padding: 2em 2.5em;
+	padding: 1em 1.5em;
 	position: absolute;
 }
 
