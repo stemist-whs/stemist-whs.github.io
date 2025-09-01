@@ -2501,6 +2501,8 @@ button.small,
 	text-decoration: none;
 	font-weight: 200;
 	font-size: 20px;
+	border-radius: 10px;
+	border: solid 1px #ffffff77;
 }
 
 #header nav ul li input[type="button"],
@@ -2547,6 +2549,9 @@ button.small,
 #header nav ul li.current>a {
 	font-weight: 900;
 	font-size: 20px;
+	box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+	border: solid 1px #ffffff;
 	
 }
 
