@@ -1,159 +1,90 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Past Events - STEMist WHS</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-
-	<style>
-		.image.gallery {
-			display: block;
-			width: 100%;
-			height: 200px;
-			margin: 0 0 2em 0;
-		}
-		.image.gallery img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	</style>
-
+  <meta charset="UTF-8" />
+  <title>Past Events - STEMist WHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">STEMist WHS</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#sponsors">SPONSORS</a></li>
+        <li><a href="index.html#team">OUR TEAM</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">EVENTS</button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="current-events.html">Current Events</a></li>
+            <li><a href="past-events.html" class="active">Past Events</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<body class="index is-preload">
-	<div id="page-wrapper">
+  <main class="section">
+    
+    <div class="container">
+      <h1>Our Event Gallery</h1>
+      <p class="section-intro">Take a look at the amazing moments from our past competitions and events.</p>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1 id="logo"><a href="index.html">STEMist <span>by Washington High School</span></a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="team.html">OUR TEAM</a></li>
-					<li><a href="sponsors.html">SPONSORS</a></li>
-					<li class="submenu current">
-						<a href="#" class="layouts">EVENTS</a>
-						<ul>
-							<li><a href="past-events.html">Past Events</a></li>
-							<li><a href="current-events.html">Current Events</a></li>
-						</ul>
-					</li>
-					<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
-				</ul>
-			</nav>
-		</header>
+      <div class="event-section current-event-card">
+        <img src="./assets/images/events/coding-class-25/current_event_sept_2025.png" alt="Current Event" class="current-event-image" />
+      </div>
 
+      <section class="event-section">
+        <h2>STEMist Mathathon - August 2025</h2>
+        <p>
+          Our latest math competition that brought together talented students from across the East Bay for an exciting day of problem-solving and collaboration.
+        </p>
 
-		<!-- Main -->
-		<article id="main">
-			<header class="special container">
-				<span class="icon solid fa-images"></span>
-				<h2>Our Event Gallery</h2>
-				<p>Take a look at the amazing moments from our past competitions and events.</p>
-			</header>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2688.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2708.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2712.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2746.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2760.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2769.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2778.jpg" alt="STEMist Mathathon - August 2025" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/images/events/mathathon-25/IMG_2600.png" alt="STEMist Mathathon - August 2025" />
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
 
-			<!-- Event 1 -->
-			<section class="wrapper style2 container special-alt">
-				<div class="row gtr-50">
-					<div class="col-12">
-						<header>
-							<h2>STEMist Mathathon - August 2025</h2>
-						</header>
-						<p>Our latest math competition that brought together talented students from across the
-							East Bay for an exciting day of problem-solving and collaboration.</p>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>STEMist WHS</span>
+    </div>
+  </footer>
 
-						<!-- Photo Gallery -->
-						<div class="gallery">
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2688.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2688.jpg" alt="Mathathon August 2025 - Competition Scene" />
-									</a>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<video class="image gallery" controls preload="metadata" width="100%" height="200px">
-										<source src="images/past_events/aug_2025/IMG_2689.mp4" type="video/mp4">
-										<source src="images/past_events/aug_2025/IMG_2689.MOV" type="video/quicktime">
-										Your browser does not support the video tag.
-									</video>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2708.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2708.jpg" alt="Mathathon August 2025 - Problem Solving" />
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2712.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2712.jpg" alt="Mathathon August 2025 - Student Focus" />
-									</a>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2746.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2746.jpg" alt="Mathathon August 2025 - Collaborative Learning" />
-									</a>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2760.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2760.jpg" alt="Mathathon August 2025 - Celebration" />
-									</a>
-								</div>
-
-							</div>
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2769.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2769.jpg" alt="Mathathon August 2025 - Achievement" />
-									</a>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2778.jpg" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2778.jpg" alt="Mathathon August 2025 - Success" />
-									</a>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<a href="images/past_events/aug_2025/IMG_2600.png" class="image gallery">
-										<img src="images/past_events/aug_2025/IMG_2600.png" alt="Mathathon August 2025 - Celebration" />
-									</a>
-								</div>
-
-							</div>
-							<div class="row">
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</article>
-
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
