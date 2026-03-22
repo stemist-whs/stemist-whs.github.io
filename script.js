@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Observe cards with staggered delay
   document.querySelectorAll(".team-card, .sponsor-card, .tier-card").forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.1}s`;
+    card.style.transitionDelay = `${index * 0.05}s`;
     observer.observe(card);
   });
 
