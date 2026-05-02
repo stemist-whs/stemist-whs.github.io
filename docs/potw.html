@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Problem of the Week - STEMist WHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .potw-frame-section {
+      padding: 0rem 0 0rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .potw-frame-wrapper {
+      flex: 1;
+      /* border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle); */
+      overflow: hidden;
+      background: rgba(15, 23, 42, 0.96);
+      box-shadow: var(--shadow-soft);
+      /* Minimum height so the iframe is usable on load */
+      min-height: 80vh;
+    }
+
+    .potw-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 80vh;
+      border: none;
+      display: block;
+      /* Remove iframe background flash */
+      background: #050816;
+    }
+
+    .potw-frame-section .container{
+      width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">STEMist WHS</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#team">OUR TEAM</a></li>
+        <li><a href="sponsors.html">SPONSORS</a></li>
+        <li><a href="potw.html" class="active">PROBLEM OF THE WEEK</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle">EVENTS</button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="current-events.html">Current Events</a></li>
+            <li><a href="past-events.html">Past Events</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section potw-frame-section">
+    <div class="container" style="flex: 1; display: flex; flex-direction: column;">
+      <div class="potw-frame-wrapper">
+        <iframe
+          src="potw/"
+          title="STEMist Mathathon — Problem of the Week"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>STEMist WHS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Auto-resize iframe to match its content height
+    const potwIframe = document.querySelector('.potw-frame-wrapper iframe');
+    window.addEventListener('message', (e) => {
+      if (e.data && e.data.type === 'potw-resize' && potwIframe) {
+        const h = Math.max(600, e.data.height);
+        potwIframe.style.height = h + 'px';
+        potwIframe.style.minHeight = '';
+      }
+    });
+  </script>
+</body>
+</html>

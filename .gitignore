@@ -1,0 +1,4 @@
+weekly-math-quest/node_modules/
+weekly-math-quest/.env
+weekly-math-quest/dist/
+.DS_Store
